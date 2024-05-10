@@ -7,7 +7,6 @@
     <groupId>com.devjmestrada</groupId>
     <artifactId>otp-system</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -16,6 +15,8 @@
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
+        <version>1.18.32</version>
+        <scope>provided</scope>
     </dependency>
     <dependency>
         <groupId>com.google.zxing</groupId>
@@ -25,6 +26,7 @@
     <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
+        <version>1.17.0</version>
     </dependency>
 </dependencies>
 </project>

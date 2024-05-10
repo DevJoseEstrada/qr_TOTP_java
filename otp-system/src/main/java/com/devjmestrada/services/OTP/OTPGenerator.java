@@ -1,5 +1,4 @@
-package org.devjmestrada.otpsystem.services.OTP;
-
+package com.devjmestrada.services.OTP;
 
 import org.apache.commons.codec.binary.Base32;
 

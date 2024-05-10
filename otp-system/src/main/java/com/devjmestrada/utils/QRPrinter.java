@@ -1,4 +1,4 @@
-package org.devjmestrada.otpsystem.utils;
+package com.devjmestrada.utils;
 
 import com.google.zxing.common.BitMatrix;
 

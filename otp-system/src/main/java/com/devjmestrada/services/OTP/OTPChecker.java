@@ -1,4 +1,4 @@
-package org.devjmestrada.otpsystem.services.OTP;
+package com.devjmestrada.services.OTP;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;

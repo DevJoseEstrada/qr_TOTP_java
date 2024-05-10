@@ -1,4 +1,4 @@
-package org.devjmestrada.otpsystem.model;
+package com.devjmestrada.model;
 
 import lombok.Builder;
 import lombok.Getter;

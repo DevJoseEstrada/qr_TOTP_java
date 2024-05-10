@@ -1,4 +1,4 @@
-package org.devjmestrada.otpsystem.utils;
+package com.devjmestrada.utils;
 
 import org.apache.commons.codec.binary.Base32;
 

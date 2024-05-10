@@ -2,7 +2,17 @@ package com.devjmestrada;
 
 import java.util.Map;
 
-import javax.crypto.SecretKey;
+import com.devjmestrada.model.OtpAuth;
+import com.devjmestrada.services.OTP.OTPChecker;
+import com.devjmestrada.utils.SecretKey;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.EncodeHintType;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.QRCodeWriter;
+import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+
+import static com.devjmestrada.utils.QRPrinter.printQR;
 
 public class Main {
 public final static int QR_SIZE = 5;
@@ -25,7 +35,7 @@ public final static int QR_SIZE = 5;
         do {
         System.out.println("Introduce the OTP code to verify");
         otp = System.console().readLine();
-        codeIsValid = OTPChecker.isValidCode(secretKey,otp)
+        codeIsValid = OTPChecker.isValidCode(secretKey,otp);
         if(codeIsValid){
             System.out.println("The OTP is correct");
         }else {
