@@ -1,21 +1,11 @@
-package org.devjmestrada.otpsystem;
-
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.EncodeHintType;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
-import com.google.zxing.qrcode.QRCodeWriter;
-import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
-import org.devjmestrada.otpsystem.model.OtpAuth;
-import org.devjmestrada.otpsystem.services.OTP.OTPChecker;
-import org.devjmestrada.otpsystem.utils.SecretKey;
+package com.devjmestrada;
 
 import java.util.Map;
 
-import static org.devjmestrada.otpsystem.utils.QRPrinter.printQR;
+import javax.crypto.SecretKey;
 
 public class Main {
-    public final static int QR_SIZE = 5;
+public final static int QR_SIZE = 5;
     public final static String USER_NAME = "Pablo";
     public final static String ISSUER = "MasterCiber";
     public final static String ALGORITHM = "SHA1";
