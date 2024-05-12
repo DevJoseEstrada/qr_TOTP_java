@@ -15,7 +15,7 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import static com.devjmestrada.utils.QRPrinter.printQR;
 
 public class Main {
-public final static int QR_SIZE = 5;
+    public final static int QR_SIZE = 5;
     public final static String USER_NAME = "Pablo";
     public final static String ISSUER = "MasterCiber";
     public final static String ALGORITHM = "SHA1";
